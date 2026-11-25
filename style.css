@@ -22,3 +22,14 @@
 .whatsapp-cta{gap:9px}
 .whatsapp-cta .wa-3d-icon{width:25px;height:25px;flex-basis:25px}
 @media(max-width:600px){.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
+
+
+/* Official-style circular WhatsApp mark */
+.wa-3d-icon{width:28px;height:28px;flex:0 0 28px;overflow:visible;filter:drop-shadow(0 3px 1px #00572a) drop-shadow(0 5px 5px #001b12aa);transform:translateY(-1px);transition:transform .25s,filter .25s}
+.wa-3d-icon .wa-circle-shadow{fill:#00572a;transform:translateY(1.5px)}
+.wa-3d-icon .wa-circle{fill:url(#waCircle);stroke:#c9ffdc;stroke-width:1.2}
+.wa-3d-icon .wa-bubble{fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.wa-3d-icon .wa-handset{fill:#fff;stroke:#fff;stroke-width:.35}
+.whatsapp-float:hover .wa-3d-icon,.whatsapp-cta:hover .wa-3d-icon{transform:translateY(-3px) scale(1.08);filter:drop-shadow(0 4px 1px #00572a) drop-shadow(0 8px 8px #001b12aa)}
+.whatsapp-cta .wa-3d-icon{width:25px;height:25px;flex-basis:25px}
+@media(max-width:600px){.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
