@@ -20,6 +20,7 @@ if(projectInquiryForm){
       'Project Budget: '+data.get('projectBudget'),
       'Project Details: '+data.get('projectDetails')
     ].join('\n');
+    const requests=JSON.parse(localStorage.getItem('hd-admin-messages')||'[]');requests.unshift({id:'msg-'+Date.now(),title:'Project inquiry — '+data.get('clientName'),name:data.get('clientName'),email:data.get('email'),category:data.get('projectType'),value:data.get('projectBudget'),date:new Date().toLocaleString(),description:data.get('projectDetails'),read:false});localStorage.setItem('hd-admin-messages',JSON.stringify(requests));
     const whatsappUrl='https://wa.me/923166301493?text='+encodeURIComponent(message);
     window.open(whatsappUrl,'_blank','noopener,noreferrer');
   });
