@@ -348,3 +348,20 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 .projects-empty{color:var(--muted);text-align:center;padding:35px}
 .project-detail-card[hidden]{display:none}
 @media(max-width:640px){.project-toolbar{align-items:flex-start;flex-direction:column}.project-filters{gap:7px}.filter-btn{padding:9px 12px;font-size:10px}.project-screenshot{height:180px}.project-card .project-description{min-height:0}.project-actions .btn{min-width:0}}
+
+
+/* Hire Me project inquiry form */
+.hire-form-section{padding:15px 0 75px}
+.hire-form-section .section-top{margin-bottom:28px}
+.project-inquiry-form{padding:30px;border:1px solid rgba(85,216,245,.24);border-radius:18px;background:linear-gradient(145deg,rgba(16,39,68,.96),rgba(7,22,41,.98));box-shadow:0 22px 60px rgba(0,0,0,.22)}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.project-inquiry-form label{display:flex;flex-direction:column;gap:8px;color:#dce9f8;font-size:12px;font-weight:600}
+.project-inquiry-form input,.project-inquiry-form select,.project-inquiry-form textarea{width:100%;min-width:0;padding:14px 15px;border:1px solid rgba(148,185,225,.22);border-radius:9px;background:#07172b;color:#f5f8ff;font:400 13px var(--font);outline:none;transition:border-color .2s,box-shadow .2s}
+.project-inquiry-form input:focus,.project-inquiry-form select:focus,.project-inquiry-form textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(39,200,245,.1)}
+.project-inquiry-form input::placeholder,.project-inquiry-form textarea::placeholder{color:#7188a7}
+.project-inquiry-form select:invalid{color:#91a4bf}
+.project-inquiry-form textarea{resize:vertical;min-height:140px}
+.form-full{grid-column:1/-1}
+.form-submit{margin-top:22px;border:0;cursor:pointer;font-family:var(--font)}
+.form-hint{display:inline-block;margin:0 0 0 14px;color:var(--muted);font-size:11px}
+@media(max-width:640px){.project-inquiry-form{padding:20px 16px}.form-grid{grid-template-columns:1fr;gap:16px}.form-full{grid-column:auto}.form-submit{width:100%}.form-hint{display:block;margin:12px 0 0;line-height:1.6}}
