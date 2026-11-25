@@ -365,3 +365,35 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 .form-submit{margin-top:22px;border:0;cursor:pointer;font-family:var(--font)}
 .form-hint{display:inline-block;margin:0 0 0 14px;color:var(--muted);font-size:11px}
 @media(max-width:640px){.project-inquiry-form{padding:20px 16px}.form-grid{grid-template-columns:1fr;gap:16px}.form-full{grid-column:auto}.form-submit{width:100%}.form-hint{display:block;margin:12px 0 0;line-height:1.6}}
+
+
+/* Dark / light theme */
+:root[data-theme="light"]{--bg:#f3f7fc;--bg2:#e8f0f8;--panel:#ffffff;--text:#14243a;--muted:#53677f;--line:rgba(35,75,115,.18);--cyan:#087fa8;--blue:#315bd4;color-scheme:light}
+:root[data-theme="light"] body{background:#f3f7fc;color:#14243a}
+:root[data-theme="light"] .site-header{background:rgba(246,250,255,.92);border-color:#d6e2ef}
+:root[data-theme="light"] .nav-links{color:#40546c}
+:root[data-theme="light"] .nav-links a{color:inherit}
+:root[data-theme="light"] .nav-links .nav-contact{color:#087fa8}
+:root[data-theme="light"] .menu-toggle span{background:#14243a}
+:root[data-theme="light"] .service-card,:root[data-theme="light"] .page-link-card,:root[data-theme="light"] .project-card,:root[data-theme="light"] .price-card,:root[data-theme="light"] .contact-info>div,:root[data-theme="light"] .hire-methods a,:root[data-theme="light"] .project-inquiry-form{background:linear-gradient(145deg,#fff,#edf4fb);color:#14243a;border-color:#d4e2f0}
+:root[data-theme="light"] .hero:before{background:linear-gradient(90deg,#f3f7fc 0%,rgba(243,247,252,.8) 45%,transparent 100%)}
+:root[data-theme="light"] .hero{background-image:linear-gradient(rgba(40,90,130,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(40,90,130,.055) 1px,transparent 1px)}
+:root[data-theme="light"] .hero-tags span,:root[data-theme="light"] .btn-quiet{color:#29425f;background:#ffffffa8;border-color:#c7d8e9}
+:root[data-theme="light"] .hero-lead,:root[data-theme="light"] .service-card p,:root[data-theme="light"] .project-card p,:root[data-theme="light"] .price-desc,:root[data-theme="light"] .muted{color:#53677f}
+:root[data-theme="light"] .contact-card,:root[data-theme="light"] .cta-band{background:linear-gradient(145deg,#e5f1fc,#fff);color:#14243a;border-color:#c8deef}
+:root[data-theme="light"] .contact-card>p:not(.eyebrow),:root[data-theme="light"] .cta-band p:last-child{color:#53677f}
+:root[data-theme="light"] .footer{background:#eaf1f8}
+:root[data-theme="light"] .project-inquiry-form input,:root[data-theme="light"] .project-inquiry-form select,:root[data-theme="light"] .project-inquiry-form textarea{background:#fff;color:#14243a;border-color:#cbd9e8}
+:root[data-theme="light"] .project-inquiry-form label{color:#243b55}
+.theme-toggle{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--cyan);font-size:19px;cursor:pointer;transition:.25s}
+.theme-toggle:hover{transform:rotate(18deg);border-color:var(--cyan);box-shadow:0 0 18px #27c8f533}
+.typed-role{display:inline-block;min-width:11ch;border-right:2px solid var(--cyan);padding-right:5px;animation:typing-caret .8s step-end infinite}
+@keyframes typing-caret{50%{border-color:transparent}}
+.testimonial-card,.faq-list details,.blog-card{border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#102744,#091a30);padding:25px}
+.testimonial-card{max-width:720px;position:relative}.quote-mark{font:700 55px var(--display);line-height:.8;color:var(--cyan)}.testimonial-card h3{font:600 20px var(--display);margin:14px 0 8px}.testimonial-card p,.testimonial-note{font-size:12px;color:var(--muted)}.testimonial-note{color:var(--cyan)}
+.faq-list{display:grid;gap:12px;max-width:900px}.faq-list details{padding:0 22px}.faq-list summary{padding:18px 0;cursor:pointer;font:600 15px var(--display);color:var(--text)}.faq-list details p{font-size:13px;color:var(--muted);margin:0;padding:0 0 18px;line-height:1.8}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.blog-card{transition:.3s}.blog-card:hover{transform:translateY(-6px);border-color:var(--cyan)}.blog-card>span{font-size:9px;letter-spacing:1.6px;color:var(--cyan);font-weight:800}.blog-card h3{font:600 18px var(--display);margin:15px 0 9px}.blog-card p{font-size:12px;color:var(--muted);line-height:1.8;min-height:66px}.blog-card a{font-size:11px;font-weight:700;color:var(--cyan)}
+:root[data-theme="light"] .testimonial-card,:root[data-theme="light"] .faq-list details,:root[data-theme="light"] .blog-card{background:linear-gradient(145deg,#fff,#edf4fb);color:#14243a;border-color:#d4e2f0}
+.whatsapp-float{width:62px;height:62px;padding:0;display:flex;align-items:center;justify-content:center;background:transparent;border:0;box-shadow:none}.whatsapp-float .wa-3d-icon{width:58px;height:58px;flex-basis:58px}.whatsapp-float .wa-3d-icon img{width:33px;height:33px}
+@media(max-width:640px){.nav{gap:8px}.theme-toggle{width:34px;height:34px;flex:0 0 34px}.blog-grid{grid-template-columns:1fr}.whatsapp-float{right:13px;bottom:13px}.typed-role{min-width:0}}
+@media(prefers-reduced-motion:reduce){.typed-role{animation:none}.blog-card:hover,.theme-toggle:hover{transform:none}}
