@@ -33,3 +33,12 @@
 .whatsapp-float:hover .wa-3d-icon,.whatsapp-cta:hover .wa-3d-icon{transform:translateY(-3px) scale(1.08);filter:drop-shadow(0 4px 1px #00572a) drop-shadow(0 8px 8px #001b12aa)}
 .whatsapp-cta .wa-3d-icon{width:25px;height:25px;flex-basis:25px}
 @media(max-width:600px){.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
+
+
+/* Clean, original WhatsApp mark — no 3D treatment or label */
+.wa-3d-icon{display:block;width:27px;height:27px;flex:0 0 27px;filter:none!important;transform:none!important;transition:transform .2s ease}
+.whatsapp-float{width:54px;height:54px;padding:0;justify-content:center;border-radius:50%;gap:0}
+.whatsapp-float:hover .wa-3d-icon,.whatsapp-cta:hover .wa-3d-icon{filter:none!important;transform:scale(1.06)!important}
+.whatsapp-cta{gap:9px}
+.whatsapp-cta .wa-3d-icon{width:23px;height:23px;flex-basis:23px}
+@media(max-width:600px){.whatsapp-float{width:50px;height:50px;padding:0}.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
