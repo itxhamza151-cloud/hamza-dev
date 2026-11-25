@@ -1,1 +1,55 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#061225"><meta name="description" content="Hamza Dev — modern responsive websites and front-end development."><link rel="icon" href="file_00000000063481f89736d1b24f86094d.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Projects | Hamza Dev</title></head><body><header class="site-header"><nav class="nav container"><a class="brand" href="index.html"><img src="file_00000000063481f89736d1b24f86094d.png" alt="Hamza Dev logo"><span>Hamza<span class="brand-accent">Dev</span><i>.</i></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="pricing.html">Pricing</a><a class="nav-contact" href="hire-me.html">Hire Me ↗</a></div></nav></header><main><section class="page-intro container"><p class="eyebrow">MY PORTFOLIO</p><h1>Featured <span class="gradient">Projects.</span></h1><p class="hero-lead">A showcase of website concepts and front-end work.</p></section><section class="container project-grid project-grid-page"><article class="project-card"><div class="project-art art-shop"><span>SHOP</span><b>Online Store</b></div><h3>E-Commerce Website</h3><p>Storefront concept with product-focused layout.</p><small>HTML · CSS · JavaScript</small></article><article class="project-card"><div class="project-art art-portfolio"><span>HD</span><b>Portfolio</b></div><h3>Portfolio Website</h3><p>Personal portfolio with modern visual identity.</p><small>HTML · CSS · JavaScript</small></article><article class="project-card"><div class="project-art art-campus"><span>UNI</span><b>Campus</b></div><h3>University System</h3><p>Academic dashboard and student-focused interface concept.</p><small>HTML · CSS · JavaScript</small></article></section></main><footer class="footer"><div class="container"><a class="brand footer-brand" href="index.html"><img src="file_00000000063481f89736d1b24f86094d.png" alt=""><span>Hamza<span class="brand-accent">Dev</span><i>.</i></span></a><p>Designed & built by Hamza Saeed.</p><span>© <span id="year"></span> Hamza Dev</span></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#061225">
+<meta name="description" content="Explore Hamza Saeed's web development projects, technologies and live demos.">
+<link rel="icon" href="file_00000000063481f89736d1b24f86094d.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><title>Projects | Hamza Dev</title>
+</head>
+<body>
+<header class="site-header"><nav class="nav container">
+<a class="brand" href="index.html"><img src="file_00000000063481f89736d1b24f86094d.png" alt="Hamza Dev logo"><span>Hamza<span class="brand-accent">Dev</span><i>.</i></span></a>
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+<div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html" aria-current="page">Projects</a><a href="pricing.html">Pricing</a><a class="nav-contact" href="hire-me.html">Hire Me ↗</a></div>
+</nav></header>
+<main>
+<section class="page-intro container"><p class="eyebrow">MY PORTFOLIO</p><h1>Featured <span class="gradient">Projects.</span></h1><p class="hero-lead">Explore selected website concepts and front-end work. Filter by category to find the right project.</p></section>
+<section class="container projects-section">
+<div class="project-toolbar" aria-label="Filter projects">
+<div class="project-filters" role="group" aria-label="Project categories">
+<button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+<button class="filter-btn" type="button" data-filter="html-css" aria-pressed="false">HTML &amp; CSS</button>
+<button class="filter-btn" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+<button class="filter-btn" type="button" data-filter="react" aria-pressed="false">React JS</button>
+<button class="filter-btn" type="button" data-filter="web-app" aria-pressed="false">Web Applications</button>
+</div><p class="project-count" aria-live="polite"><span id="project-count">3</span> projects</p>
+</div>
+<div class="project-grid project-grid-page" id="projects-list">
+<article class="project-card project-detail-card" data-category="html-css javascript web-app">
+<div class="project-art art-shop project-screenshot" role="img" aria-label="E-commerce storefront project preview"><span>SHOP</span><b>Online Store</b><i class="preview-window"><em></em><em></em><em></em></i></div>
+<div class="project-card-body"><div class="project-card-heading"><h3>E-Commerce Website</h3><span class="project-type">Web Application</span></div>
+<p class="project-description">A storefront concept with a product-focused layout, clear navigation and responsive shopping experience.</p>
+<div class="tech-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+<div class="project-actions"><a class="btn btn-primary" href="https://hamza-dev-pied.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a><a class="btn btn-quiet" href="https://github.com/itxhamza151-cloud/hamza-dev" target="_blank" rel="noopener">GitHub Source ↗</a></div></div></article>
+<article class="project-card project-detail-card" data-category="html-css javascript">
+<div class="project-art art-portfolio project-screenshot" role="img" aria-label="Personal portfolio project preview"><span>HD</span><b>Portfolio</b><i class="preview-window"><em></em><em></em><em></em></i></div>
+<div class="project-card-body"><div class="project-card-heading"><h3>Hamza Dev Portfolio</h3><span class="project-type">Portfolio</span></div>
+<p class="project-description">A personal developer portfolio with a dark visual identity, animated details and responsive multi-page layout.</p>
+<div class="tech-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+<div class="project-actions"><a class="btn btn-primary" href="https://hamza-dev-pied.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a><a class="btn btn-quiet" href="https://github.com/itxhamza151-cloud/hamza-dev" target="_blank" rel="noopener">GitHub Source ↗</a></div></div></article>
+<article class="project-card project-detail-card" data-category="html-css javascript web-app">
+<div class="project-art art-campus project-screenshot" role="img" aria-label="University system dashboard project preview"><span>UNI</span><b>Campus</b><i class="preview-window"><em></em><em></em><em></em></i></div>
+<div class="project-card-body"><div class="project-card-heading"><h3>University System</h3><span class="project-type">Web Application</span></div>
+<p class="project-description">An academic dashboard concept designed around student information and a straightforward interface.</p>
+<div class="tech-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+<div class="project-actions"><a class="btn btn-primary demo-pending" href="mailto:tmhamza204@gmail.com?subject=University%20System%20Demo">Request Demo ↗</a><a class="btn btn-quiet" href="https://github.com/itxhamza151-cloud/hamza-dev" target="_blank" rel="noopener">GitHub Source ↗</a></div></div></article>
+</div>
+<p class="projects-empty" id="projects-empty" hidden>No projects in this category yet. Try another filter.</p>
+</section>
+<section class="section"><div class="container cta-band"><div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's build <span class="gradient">something.</span></h2><p>Have an idea? Let's turn it into something real.</p></div><a class="btn btn-primary" href="hire-me.html">Hire Me Now ↗</a></div></section>
+</main>
+<footer class="footer"><div class="container"><a class="brand footer-brand" href="index.html"><img src="file_00000000063481f89736d1b24f86094d.png" alt=""><span>Hamza<span class="brand-accent">Dev</span><i>.</i></span></a><p>Designed &amp; built by Hamza Saeed.</p><span>© <span id="year"></span> Hamza Dev</span></div></footer>
+<script src="script.js"></script></body></html>
