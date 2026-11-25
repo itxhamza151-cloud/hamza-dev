@@ -24,3 +24,18 @@ if(projectInquiryForm){
     window.open(whatsappUrl,'_blank','noopener,noreferrer');
   });
 }
+
+
+/* Theme switcher: saved locally in this browser */
+const themeButton=document.querySelector('.theme-toggle');
+const savedTheme=localStorage.getItem('hamza-dev-theme')||'dark';
+document.documentElement.dataset.theme=savedTheme;
+if(themeButton){const syncThemeButton=()=>{themeButton.textContent=document.documentElement.dataset.theme==='dark'?'☀':'☾';themeButton.setAttribute('aria-label',document.documentElement.dataset.theme==='dark'?'Switch to light mode':'Switch to dark mode');};syncThemeButton();themeButton.addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;localStorage.setItem('hamza-dev-theme',next);syncThemeButton();});}
+/* Animated role typing */
+const typedRole=document.querySelector('.typed-role');
+if(typedRole){const roles=(typedRole.dataset.roles||'Front-End Developer|Web Designer').split('|');let roleIndex=0,charIndex=roles[0].length,deleting=false;setInterval(()=>{const role=roles[roleIndex];if(!deleting){charIndex++;typedRole.textContent=role.slice(0,charIndex);if(charIndex>=role.length){deleting=true;setTimeout(()=>{},700);}}else{charIndex--;typedRole.textContent=role.slice(0,charIndex);if(charIndex<=0){deleting=false;roleIndex=(roleIndex+1)%roles.length;}}if(!deleting&&charIndex===role.length){deleting=true;}},105);}
+/* Reveal page content as it enters the viewport */
+const animatedSections=document.querySelectorAll('main section,.service-card,.project-card,.price-card,.faq-list details,.blog-card,.testimonial-card');
+animatedSections.forEach((item,index)=>{if(!item.classList.contains('hero'))item.classList.add('reveal');item.style.transitionDelay=(index%4)*70+'ms';});
+const allReveal=document.querySelectorAll('.reveal');
+if('IntersectionObserver'in window){const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}}),{threshold:.08});allReveal.forEach(item=>revealObserver.observe(item));}else{allReveal.forEach(item=>item.classList.add('is-visible'));}
