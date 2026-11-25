@@ -6,4 +6,5 @@ A responsive personal portfolio website for Hamza Saeed, built with HTML, CSS an
 Open `index.html` in your browser.
 
 ## Deploy
-Import this repository into Vercel. No build command is required; the site is static and the output directory is the repository root.
+GitHub Pages deployment is configured through `.github/workflows/deploy.yml`.
+The site is static and uses the repository root as its publishing directory.
