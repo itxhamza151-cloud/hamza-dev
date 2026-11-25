@@ -296,3 +296,19 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 @media(prefers-reduced-motion:reduce){
   .service-icon,.icon-layout span,.icon-responsive span,.icon-code span{animation:none!important}
 }
+
+
+/* Multi-page portfolio and animated custom service icons */
+.page-link-grid,.service-page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.page-link-card{display:block;padding:25px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#102744,#091a30);transition:transform .3s,border-color .3s}
+.page-link-card:hover{transform:translateY(-7px);border-color:#55d8f5}
+.page-link-card h3{font:600 22px var(--display)}.page-link-card p{color:var(--muted);font-size:12px}.page-link-card b{color:var(--cyan);font-size:11px}
+.inner-page{min-height:72vh;padding-bottom:80px}.page-intro{padding:90px 0 40px}.page-intro h1{font-size:clamp(42px,6vw,66px)}
+.service-detail{padding:28px;min-height:300px}.service-svg{width:66px;height:66px;border-radius:17px;margin-bottom:25px}
+.service-svg svg{width:38px;height:38px;fill:none;stroke:#a0efff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 3px 7px #24bce988);animation:service-icon-motion 3.5s ease-in-out infinite}
+.service-detail:nth-child(2) svg{animation-delay:.6s}.service-detail:nth-child(3) svg{animation-delay:1.2s}
+.service-detail:hover svg{animation-duration:1s}
+@keyframes service-icon-motion{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-7px) rotate(5deg) scale(1.1)}}
+.work-page-grid,.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.contact-info{display:grid;gap:12px}.contact-info>div{padding:22px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#102744,#091a30)}.contact-info small{color:var(--cyan)}.contact-info h3{font:600 16px var(--display)}
+@media(max-width:640px){.page-link-grid,.service-page-grid,.work-page-grid,.contact-layout{grid-template-columns:1fr}.page-intro{padding-top:65px}.service-detail{min-height:0}}
