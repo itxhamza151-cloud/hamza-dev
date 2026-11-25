@@ -13,43 +13,19 @@
 @media(max-width:640px){.container{width:min(100% - 36px,500px)}.nav{height:64px}.brand{font-size:18px}.brand img{width:36px;height:36px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:64px;left:0;right:0;padding:20px 24px 24px;background:#08172b;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:18px}.nav-links.open{display:flex}.nav-contact{text-align:center}.hero{padding:68px 0 24px;min-height:0}.hero-grid{grid-template-columns:1fr;gap:0}.hero-copy{position:relative;z-index:2}.eyebrow{font-size:9px;margin-bottom:17px}h1{font-size:clamp(42px,11vw,56px);letter-spacing:-2px;margin-bottom:18px}.hero-lead{font-size:14px;line-height:1.8}.hero-actions{margin:23px 0 22px;gap:9px}.btn{padding:13px 15px;font-size:11px}.hero-tags{gap:6px}.hero-tags span{font-size:9px;padding:5px 8px}.portrait-stage{height:370px;margin-top:-2px}.portrait{height:385px;width:100%;max-width:390px}.ring-one{width:285px;height:285px}.ring-two{width:340px;height:340px}.portrait-halo{width:290px;height:290px}.chip-code{top:55px;right:0}.chip-responsive{bottom:45px;left:0}.float-chip{padding:8px 10px;gap:7px}.chip-icon{height:27px;width:27px}.float-chip b{font-size:9px}.float-chip small{font-size:8px}.orbit-dot{top:35px}.hero-bottom{font-size:8px;margin-top:10px}.section{padding:76px 0}.section-top{display:block;margin-bottom:28px}.section-note{font-size:12px;margin-top:16px}.section-top h2,.work-copy h2{font-size:39px;letter-spacing:-1.8px}.service-grid{grid-template-columns:1fr;gap:12px}.service-card{min-height:0;padding:22px}.service-icon{margin-bottom:20px}.service-card h3{font-size:18px}.service-card p{margin-bottom:15px}.work-wrap{grid-template-columns:1fr;gap:35px}.work-copy h2{font-size:38px}.work-panel{transform:none}.panel-body{min-height:190px}.contact{padding-top:10px}.contact-card{padding:58px 17px 18px}.contact-card h2{font-size:46px;letter-spacing:-2px}.contact-foot{gap:16px;flex-wrap:wrap;margin-top:38px;font-size:8px}.footer>.container{flex-wrap:wrap;gap:10px}.footer p{order:3;width:100%}.whatsapp-float{right:14px;bottom:14px;padding:12px 15px;font-size:12px}.contact-email{font-size:11px!important}}
 
 
-/* Dimensional WhatsApp brand icon */
-.wa-3d-icon{width:27px;height:27px;flex:0 0 27px;overflow:visible;filter:drop-shadow(0 3px 1px #005c2c) drop-shadow(0 5px 5px #001b12aa);transform:translateY(-1px);transition:transform .25s,filter .25s}
-.wa-3d-icon .wa-shadow{fill:#005a2c;transform:translate(1px,2px)}
-.wa-3d-icon .wa-face{fill:url(#waGreen);stroke:#c2ffd3;stroke-width:1.6}
-.wa-3d-icon .wa-phone{fill:#fff;stroke:#e9fff0;stroke-width:.45}
-.whatsapp-float:hover .wa-3d-icon,.whatsapp-cta:hover .wa-3d-icon{transform:translateY(-3px) rotate(-5deg) scale(1.08);filter:drop-shadow(0 4px 1px #005c2c) drop-shadow(0 8px 8px #001b12aa)}
-.whatsapp-cta{gap:9px}
-.whatsapp-cta .wa-3d-icon{width:25px;height:25px;flex-basis:25px}
-@media(max-width:600px){.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
 
 
-/* Official-style circular WhatsApp mark */
-.wa-3d-icon{width:28px;height:28px;flex:0 0 28px;overflow:visible;filter:drop-shadow(0 3px 1px #00572a) drop-shadow(0 5px 5px #001b12aa);transform:translateY(-1px);transition:transform .25s,filter .25s}
-.wa-3d-icon .wa-circle-shadow{fill:#00572a;transform:translateY(1.5px)}
-.wa-3d-icon .wa-circle{fill:url(#waCircle);stroke:#c9ffdc;stroke-width:1.2}
-.wa-3d-icon .wa-bubble{fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-.wa-3d-icon .wa-handset{fill:#fff;stroke:#fff;stroke-width:.35}
-.whatsapp-float:hover .wa-3d-icon,.whatsapp-cta:hover .wa-3d-icon{transform:translateY(-3px) scale(1.08);filter:drop-shadow(0 4px 1px #00572a) drop-shadow(0 8px 8px #001b12aa)}
-.whatsapp-cta .wa-3d-icon{width:25px;height:25px;flex-basis:25px}
-@media(max-width:600px){.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
-
-
-/* Clean, original WhatsApp mark — no 3D treatment or label */
-.wa-3d-icon{display:block;width:27px;height:27px;flex:0 0 27px;filter:none!important;transform:none!important;transition:transform .2s ease}
-.whatsapp-float{width:54px;height:54px;padding:0;justify-content:center;border-radius:50%;gap:0}
-.whatsapp-float:hover .wa-3d-icon,.whatsapp-cta:hover .wa-3d-icon{filter:none!important;transform:scale(1.06)!important}
-.whatsapp-cta{gap:9px}
-.whatsapp-cta .wa-3d-icon{width:23px;height:23px;flex-basis:23px}
-@media(max-width:600px){.whatsapp-float{width:50px;height:50px;padding:0}.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
-
-
-/* Glossy 3D WhatsApp circle inspired by the supplied reference */
-.whatsapp-float{width:62px;height:62px;padding:0;justify-content:center;gap:0;background:transparent;border:0;box-shadow:none}
-.whatsapp-float .wa-3d-icon{width:58px;height:58px;flex:0 0 58px;filter:drop-shadow(0 0 8px rgba(24,255,150,.35)) drop-shadow(0 5px 5px rgba(0,0,0,.42));transform:translateY(0);transition:transform .25s ease,filter .25s ease}
+/* WhatsApp: clean brand mark inside a glossy green 3D circle */
+.wa-3d-icon{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;flex:0 0 42px;border-radius:50%;position:relative;overflow:hidden;background:radial-gradient(circle at 30% 22%,#8affc2 0%,#35ed91 23%,#0acb67 58%,#008d48 100%);border:1px solid rgba(207,255,226,.85);box-shadow:inset 0 3px 5px rgba(255,255,255,.55),inset 0 -5px 8px rgba(0,65,32,.42),0 4px 0 #006b39,0 7px 12px rgba(0,0,0,.34)}
+.wa-3d-icon:before{content:"";position:absolute;left:7px;top:4px;width:26px;height:10px;border-radius:50%;background:rgba(255,255,255,.28);filter:blur(3px);transform:rotate(-22deg)}
+.wa-3d-icon img{position:relative;z-index:1;width:25px;height:25px;display:block;filter:drop-shadow(0 1px 1px rgba(0,70,35,.25))}
+.whatsapp-float{width:68px;height:68px;padding:0;display:flex;align-items:center;justify-content:center;gap:0;background:transparent;border:0;box-shadow:none}
+.whatsapp-float .wa-3d-icon{width:62px;height:62px;flex-basis:62px}
+.whatsapp-float .wa-3d-icon img{width:36px;height:36px}
 .whatsapp-float:hover{background:transparent;transform:translateY(-3px)}
-.whatsapp-float:hover .wa-3d-icon{transform:scale(1.07);filter:drop-shadow(0 0 13px rgba(24,255,150,.55)) drop-shadow(0 7px 7px rgba(0,0,0,.45))}
-.whatsapp-cta{background:linear-gradient(180deg,#23d979 0%,#08a84f 100%);color:#052615;box-shadow:inset 0 1px 2px rgba(255,255,255,.38),0 7px 18px rgba(0,210,105,.23);gap:10px}
-.whatsapp-cta .wa-3d-icon{width:30px;height:30px;flex:0 0 30px;filter:drop-shadow(0 2px 2px rgba(0,60,28,.3))}
-.whatsapp-cta:hover{background:linear-gradient(180deg,#45ed91 0%,#0db85a 100%)}
-@media(max-width:600px){.whatsapp-float{width:56px;height:56px}.whatsapp-float .wa-3d-icon{width:52px;height:52px;flex-basis:52px}}
+.whatsapp-float:hover .wa-3d-icon{filter:brightness(1.06);transform:scale(1.04)}
+.whatsapp-cta{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(180deg,#45ed91 0%,#13c96b 55%,#07984f 100%);color:#052615;box-shadow:inset 0 2px 2px rgba(255,255,255,.42),0 5px 0 #006b39,0 9px 18px rgba(0,190,90,.2)}
+.whatsapp-cta .wa-3d-icon{width:42px;height:42px;flex-basis:42px;box-shadow:inset 0 2px 4px rgba(255,255,255,.5),inset 0 -3px 6px rgba(0,65,32,.32),0 2px 0 #006b39,0 4px 7px rgba(0,0,0,.2)}
+.whatsapp-cta .wa-3d-icon img{width:25px;height:25px}
+.whatsapp-cta:hover{background:linear-gradient(180deg,#59f4a0 0%,#20d978 55%,#0aa65a 100%)}
+@media(max-width:600px){.whatsapp-float{width:58px;height:58px}.whatsapp-float .wa-3d-icon{width:54px;height:54px;flex-basis:54px}.whatsapp-float .wa-3d-icon img{width:31px;height:31px}.whatsapp-cta .wa-3d-icon{width:38px;height:38px;flex-basis:38px}}
