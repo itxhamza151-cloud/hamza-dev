@@ -42,3 +42,14 @@
 .whatsapp-cta{gap:9px}
 .whatsapp-cta .wa-3d-icon{width:23px;height:23px;flex-basis:23px}
 @media(max-width:600px){.whatsapp-float{width:50px;height:50px;padding:0}.whatsapp-float .wa-3d-icon{width:25px;height:25px;flex-basis:25px}}
+
+
+/* Glossy 3D WhatsApp circle inspired by the supplied reference */
+.whatsapp-float{width:62px;height:62px;padding:0;justify-content:center;gap:0;background:transparent;border:0;box-shadow:none}
+.whatsapp-float .wa-3d-icon{width:58px;height:58px;flex:0 0 58px;filter:drop-shadow(0 0 8px rgba(24,255,150,.35)) drop-shadow(0 5px 5px rgba(0,0,0,.42));transform:translateY(0);transition:transform .25s ease,filter .25s ease}
+.whatsapp-float:hover{background:transparent;transform:translateY(-3px)}
+.whatsapp-float:hover .wa-3d-icon{transform:scale(1.07);filter:drop-shadow(0 0 13px rgba(24,255,150,.55)) drop-shadow(0 7px 7px rgba(0,0,0,.45))}
+.whatsapp-cta{background:linear-gradient(180deg,#23d979 0%,#08a84f 100%);color:#052615;box-shadow:inset 0 1px 2px rgba(255,255,255,.38),0 7px 18px rgba(0,210,105,.23);gap:10px}
+.whatsapp-cta .wa-3d-icon{width:30px;height:30px;flex:0 0 30px;filter:drop-shadow(0 2px 2px rgba(0,60,28,.3))}
+.whatsapp-cta:hover{background:linear-gradient(180deg,#45ed91 0%,#0db85a 100%)}
+@media(max-width:600px){.whatsapp-float{width:56px;height:56px}.whatsapp-float .wa-3d-icon{width:52px;height:52px;flex-basis:52px}}
