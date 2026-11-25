@@ -39,3 +39,8 @@ const animatedSections=document.querySelectorAll('main section,.service-card,.pr
 animatedSections.forEach((item,index)=>{if(!item.classList.contains('hero'))item.classList.add('reveal');item.style.transitionDelay=(index%4)*70+'ms';});
 const allReveal=document.querySelectorAll('.reveal');
 if('IntersectionObserver'in window){const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}}),{threshold:.08});allReveal.forEach(item=>revealObserver.observe(item));}else{allReveal.forEach(item=>item.classList.add('is-visible'));}
+
+
+/* Live project search */
+const projectSearch=document.getElementById('project-search');
+if(projectSearch){projectSearch.addEventListener('input',()=>{const term=projectSearch.value.trim().toLowerCase();let visible=0;document.querySelectorAll('.project-detail-card').forEach(card=>{const match=(card.textContent+' '+(card.dataset.category||'')).toLowerCase().includes(term);card.hidden=!match;if(match)visible++;});if(count)count.textContent=visible;if(empty)empty.hidden=visible!==0;});}
