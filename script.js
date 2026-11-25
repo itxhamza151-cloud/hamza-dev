@@ -4,3 +4,23 @@ const year=document.getElementById('year');if(year)year.textContent=new Date().g
 const revealItems=document.querySelectorAll('.reveal');if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}}),{threshold:.12});revealItems.forEach(item=>observer.observe(item));}else{revealItems.forEach(item=>item.classList.add('is-visible'));}
 const filterButtons=document.querySelectorAll('.filter-btn');const projectCards=document.querySelectorAll('.project-detail-card');const count=document.getElementById('project-count');const empty=document.getElementById('projects-empty');
 if(filterButtons.length){filterButtons.forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;let visible=0;filterButtons.forEach(item=>{const active=item===button;item.classList.toggle('active',active);item.setAttribute('aria-pressed',String(active));});projectCards.forEach(card=>{const categories=(card.dataset.category||'').split(' ');const show=filter==='all'||categories.includes(filter);card.hidden=!show;if(show)visible++;});if(count)count.textContent=visible;if(empty)empty.hidden=visible!==0;}));}
+
+const projectInquiryForm=document.getElementById('projectInquiryForm');
+if(projectInquiryForm){
+  projectInquiryForm.addEventListener('submit',event=>{
+    event.preventDefault();
+    if(!projectInquiryForm.reportValidity()) return;
+    const data=new FormData(projectInquiryForm);
+    const message=[
+      'Assalam-o-Alaikum Hamza! I would like to discuss a project.',
+      '',
+      'Client Name: '+data.get('clientName'),
+      'Email Address: '+data.get('email'),
+      'Project Type: '+data.get('projectType'),
+      'Project Budget: '+data.get('projectBudget'),
+      'Project Details: '+data.get('projectDetails')
+    ].join('\n');
+    const whatsappUrl='https://wa.me/923166301493?text='+encodeURIComponent(message);
+    window.open(whatsappUrl,'_blank','noopener,noreferrer');
+  });
+}
