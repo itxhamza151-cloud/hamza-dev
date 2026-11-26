@@ -34,7 +34,7 @@ footer{padding:25px 0;background:var(--navy);color:#dce6fb;text-align:center;fon
 .price-card ul{padding-left:19px;color:var(--muted);min-height:132px}
 .price-card li{margin:7px 0}
 .popular{position:absolute;right:16px;top:15px;background:#eaf1ff;color:var(--blue);padding:5px 9px;border-radius:20px;font-size:.72rem;font-weight:800}
-.whatsapp-float{position:fixed;left:20px;bottom:20px;z-index:30;width:62px;height:62px;border-radius:50%;background:linear-gradient(145deg,#5cff91 0%,#25D366 48%,#079b49 100%);color:#fff;display:grid;place-items:center;border:1px solid #8affb2;box-shadow:inset 0 4px 7px #ffffff80,inset 0 -7px 10px #006b354d,0 5px 0 #087b3d,0 12px 22px #071b4540;transform:perspective(500px) rotateY(-9deg) rotateX(7deg);transition:transform .25s,box-shadow .25s}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:30;width:62px;height:62px;border-radius:50%;background:linear-gradient(145deg,#5cff91 0%,#25D366 48%,#079b49 100%);color:#fff;display:grid;place-items:center;border:1px solid #8affb2;box-shadow:inset 0 4px 7px #ffffff80,inset 0 -7px 10px #006b354d,0 5px 0 #087b3d,0 12px 22px #071b4540;transform:perspective(500px) rotateY(-9deg) rotateX(7deg);transition:transform .25s,box-shadow .25s}
 .whatsapp-float::before{content:"";position:absolute;inset:5px;border-radius:50%;border:1px solid #ffffff80;box-shadow:inset 0 2px 5px #ffffff55;pointer-events:none}
 .whatsapp-float::after{content:"";position:absolute;top:8px;left:14px;width:19px;height:8px;border-radius:50%;background:#ffffff70;filter:blur(2px);transform:rotate(-28deg);pointer-events:none}
 .whatsapp-float:hover{transform:perspective(500px) rotateY(0) rotateX(0) translateY(-4px) scale(1.08);box-shadow:inset 0 4px 7px #ffffff80,inset 0 -7px 10px #006b354d,0 7px 0 #087b3d,0 17px 27px #071b454d}
@@ -42,7 +42,7 @@ footer{padding:25px 0;background:var(--navy);color:#dce6fb;text-align:center;fon
 .wa-inline{display:inline-flex;align-items:center;gap:8px}
 .wa-inline svg{width:20px;height:20px;fill:#25D366}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
-@media(max-width:760px){.price-grid{grid-template-columns:1fr}.price-card p,.price-card ul{min-height:0}.whatsapp-float{width:54px;height:54px;left:14px;bottom:14px}}
+@media(max-width:760px){.price-grid{grid-template-columns:1fr}.price-card p,.price-card ul{min-height:0}.whatsapp-float{width:54px;height:54px;right:14px;bottom:14px}}
 </style>
 </head>
 <body>
