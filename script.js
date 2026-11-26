@@ -9,7 +9,6 @@ const projectInquiryForm=document.getElementById('projectInquiryForm');
 if(projectInquiryForm){
   projectInquiryForm.addEventListener('submit',event=>{
     event.preventDefault();
-    if(!projectInquiryForm.reportValidity()) return;
     const data=new FormData(projectInquiryForm);
     const message=[
       'Assalam-o-Alaikum Hamza! I would like to discuss a project.',
@@ -46,48 +45,3 @@ if('IntersectionObserver'in window){const revealObserver=new IntersectionObserve
 const projectSearch=document.getElementById('project-search');
 if(projectSearch){projectSearch.addEventListener('input',()=>{const term=projectSearch.value.trim().toLowerCase();let visible=0;document.querySelectorAll('.project-detail-card').forEach(card=>{const match=(card.textContent+' '+(card.dataset.category||'')).toLowerCase().includes(term);card.hidden=!match;if(match)visible++;});if(count)count.textContent=visible;if(empty)empty.hidden=visible!==0;});}
 
-/* Site hardening: client-side validation, honeypot, lazy images and safe runtime feedback.
-   Client-side checks improve UX only; server-side security requires a backend. */
-(()=>{
-  'use strict';
-  const forms=[...document.querySelectorAll('form')];
-  forms.forEach((form,index)=>{
-    if(!form.querySelector('[name="website_url"]')){
-      const trap=document.createElement('div');trap.setAttribute('aria-hidden','true');
-      trap.style.cssText='position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important;';
-      trap.innerHTML='<label>Leave this field empty<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label>';
-      form.appendChild(trap);
-    }
-    form.querySelectorAll('input,textarea').forEach(field=>{
-      if(field.type==='email')field.setAttribute('autocomplete','email');
-      if(field.required)field.setAttribute('aria-required','true');
-      if(field.tagName==='TEXTAREA')field.maxLength=field.maxLength>0?Math.min(field.maxLength,5000):5000;
-    });
-    form.addEventListener('submit',event=>{
-      const trap=form.querySelector('[name="website_url"]');
-      if(trap&&trap.value.trim()){event.preventDefault();event.stopImmediatePropagation();return;}
-      if(!form.checkValidity()){event.preventDefault();form.reportValidity();}
-    },true);
-  });
-  document.querySelectorAll('img').forEach((img,index)=>{
-    if(!img.hasAttribute('loading'))img.loading=index<2?'eager':'lazy';
-    img.decoding='async';
-    if(index===0&&!img.hasAttribute('fetchpriority'))img.fetchPriority='high';
-  });
-  document.querySelectorAll('a[target="_blank"]').forEach(a=>{
-    const rel=(a.getAttribute('rel')||'').split(/\s+/).filter(Boolean);
-    ['noopener','noreferrer'].forEach(x=>{if(!rel.includes(x))rel.push(x)});
-    a.setAttribute('rel',rel.join(' '));
-  });
-  let toast;
-  function showError(){
-    if(!toast){
-      toast=document.createElement('div');toast.setAttribute('role','status');toast.setAttribute('aria-live','polite');
-      toast.style.cssText='position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:9999;max-width:90vw;padding:10px 16px;border:1px solid #d99b45;border-radius:9px;background:#17243a;color:#fff;font:12px sans-serif;box-shadow:0 8px 30px #0005';
-      document.body.appendChild(toast);
-    }
-    toast.textContent='Something went wrong. Please refresh the page or contact us on WhatsApp.';
-  }
-  window.addEventListener('error',event=>{if(event.target&&event.target!==window)return;showError();});
-  window.addEventListener('unhandledrejection',()=>showError());
-})();
