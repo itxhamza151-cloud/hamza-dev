@@ -491,3 +491,22 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 .about-build-cta p:last-child{font-size:12px;color:var(--muted);margin:0}
 @media(max-width:850px){.about-info-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.about-info-grid{grid-template-columns:1fr}.about-info-card{padding:20px}.about-build-cta{align-items:flex-start;flex-direction:column;padding:23px}.about-build-cta .btn{width:100%;text-align:center}}
+
+
+/* About page: single blue profile panel layout */
+.about-more{padding-top:24px}
+.about-profile-panel{max-width:980px;margin:0 auto;padding:clamp(25px,5vw,58px);border:1px solid #2bc8f2;border-radius:26px;background:linear-gradient(145deg,#0875b9 0%,#0863ad 48%,#0750a0 100%);box-shadow:0 22px 65px #00152c88,inset 0 0 35px #36c8ff22;color:#f4f8ff}
+.about-profile-block{margin:0 0 clamp(38px,6vw,66px)}
+.about-profile-block h2,.about-profile-cta h2{font:italic 700 clamp(27px,4.5vw,43px)/1.15 var(--display);color:#f5f8ff;margin:0 0 22px}
+.about-profile-block p,.about-profile-block li,.about-profile-cta p{font-size:clamp(15px,2.2vw,21px);line-height:1.8;color:#e0efff}
+.about-profile-block p{margin:0}
+.about-profile-block ul{padding-left:25px;margin:0}
+.about-profile-block li{padding-left:3px;margin:5px 0}
+.about-skill-tags{display:flex;flex-wrap:wrap;gap:12px}
+.about-skill-tags span{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:12px 24px;border:1px solid #b3d9f777;border-radius:18px;background:#064b8290;color:#f7fbff;font-size:clamp(14px,2vw,18px);font-weight:700;box-shadow:inset 0 1px 0 #ffffff1a}
+.about-profile-cta{padding-top:8px}
+.about-profile-cta h2{font-size:clamp(30px,5vw,48px);max-width:720px}
+.about-profile-cta p{margin:0 0 28px}
+.about-profile-button{display:inline-flex;align-items:center;justify-content:center;min-height:66px;padding:16px 36px;border-radius:999px;background:#f2fbff;color:#07365b;font-size:clamp(16px,2.2vw,21px);font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.about-profile-button:hover{transform:translateY(-3px);box-shadow:0 12px 28px #001d3d55}
+@media(max-width:600px){.about-profile-panel{padding:27px 22px;border-radius:21px}.about-profile-block{margin-bottom:38px}.about-skill-tags{gap:9px}.about-skill-tags span{min-height:48px;padding:10px 15px;border-radius:14px}.about-profile-button{width:100%}}
