@@ -456,3 +456,17 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 
 .actual-project-screenshot{height:235px;overflow:hidden;border-radius:10px;background:#0b1c30;border:1px solid #60bce94d}
 .actual-project-screenshot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+
+/* WhatsApp button: white theme */
+.whatsapp-cta,
+.whatsapp-cta:hover{
+  background:#ffffff;
+  color:#111827;
+  border:1px solid #e5e7eb;
+  box-shadow:0 6px 18px rgba(0,0,0,.12);
+}
+.whatsapp-cta .wa-3d-icon{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  box-shadow:none;
+}
