@@ -525,3 +525,21 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 .about-profile-cta p{margin-bottom:34px}
 .about-profile-button{min-height:74px;padding:18px 42px;background:#f0fbff;color:#06365c;border-radius:999px;font-size:clamp(17px,2.2vw,22px);font-weight:700}
 @media(max-width:600px){.about-more{padding-top:8px}.about-profile-panel{padding:30px 22px;border-radius:24px}.about-profile-block{margin-bottom:43px}.about-profile-block h2{margin-bottom:20px}.about-profile-block p,.about-profile-block li,.about-profile-cta p{font-size:16px;line-height:1.85}.about-skill-tags{gap:10px}.about-skill-tags span{min-height:52px;padding:10px 17px;border-radius:17px}.about-profile-cta h2{font-size:34px}.about-profile-button{min-height:66px;padding:16px 25px}}
+
+
+/* Blue visual theme for About page content panel */
+.about-profile-panel{
+ background:linear-gradient(145deg,#078bd0 0%,#0874cf 42%,#0756b7 100%);
+ border:2px solid #19bdf1;
+ box-shadow:0 0 0 1px #2bbcf044,0 24px 70px #003a7770,inset 0 1px 0 #ffffff35;
+}
+.about-profile-block h2,.about-profile-cta h2{color:#ffffff;text-shadow:0 2px 16px #003d7b55}
+.about-profile-block p,.about-profile-block li,.about-profile-cta p{color:#eaf6ff}
+.about-skill-tags span{
+ background:linear-gradient(145deg,#07558fdd,#064477dd);
+ border-color:#9edbff88;
+ color:#ffffff;
+ box-shadow:0 8px 22px #00396b30,inset 0 1px 0 #ffffff25;
+}
+.about-profile-button{background:#eafaff;color:#064477;box-shadow:0 10px 26px #003b7150}
+.about-profile-button:hover{background:#ffffff;box-shadow:0 14px 32px #003b7180}
