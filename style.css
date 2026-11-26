@@ -627,3 +627,26 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 .contact-form-panel button{margin-top:22px;min-height:58px;padding:14px 28px;cursor:pointer}
 .contact-form-note{font-size:12px;line-height:1.7;color:var(--muted);margin:14px 0 0}
 @media(max-width:760px){.contact-page-layout{grid-template-columns:1fr;gap:18px}.contact-details-panel,.contact-form-panel{border-radius:20px}.contact-form-panel input{min-height:60px}}
+
+
+/* Professional contact page refinement */
+.contact-page-layout{max-width:1120px;gap:26px;padding-bottom:96px}
+.contact-details-panel,.contact-form-panel{position:relative;overflow:hidden;border:1px solid #294b68;border-radius:22px;background:linear-gradient(150deg,rgba(16,39,64,.98),rgba(7,23,41,.98));box-shadow:0 22px 60px #0004}
+.contact-details-panel:before,.contact-form-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,#20c7ef,#527df2,transparent);opacity:.9}
+.contact-details-panel{padding:clamp(27px,4vw,44px)}
+.contact-form-panel{padding:clamp(27px,4vw,44px)}
+.contact-details-panel>.eyebrow,.contact-form-panel>.eyebrow{font-size:11px;letter-spacing:2.5px;color:#55d8f2;margin-bottom:30px}
+.contact-detail-row{position:relative;padding:0 0 25px 18px;margin:0 0 25px;border-bottom:1px solid rgba(117,164,198,.2)}
+.contact-detail-row:before{content:"";position:absolute;left:0;top:4px;width:4px;height:28px;border-radius:4px;background:linear-gradient(#24d0f2,#3978e9);box-shadow:0 0 15px #21c8ed66}
+.contact-detail-row h2{font-size:21px;letter-spacing:-.3px;margin-bottom:8px}
+.contact-detail-row a{font-size:clamp(14px,1.6vw,17px);line-height:1.6;color:#c0d1e2}
+.contact-detail-row a:hover{color:#59e0f5}
+.contact-form-panel h2{font-size:clamp(27px,3vw,35px);letter-spacing:-.8px;margin-bottom:24px}
+.contact-form-panel label{margin:17px 0 8px;font-size:13px;color:#dceafa}
+.contact-form-panel input,.contact-form-panel textarea{box-sizing:border-box;min-height:58px;padding:16px 18px;border:1px solid rgba(117,164,198,.28);border-radius:12px;background:rgba(3,16,30,.82);font-size:15px}
+.contact-form-panel textarea{min-height:132px}
+.contact-form-panel input:focus,.contact-form-panel textarea:focus{border-color:#27c9ef;box-shadow:0 0 0 3px #27c9ef19}
+.contact-form-panel button{min-width:175px;border:0;border-radius:12px;box-shadow:0 10px 25px #087bc344}
+.contact-form-panel button:hover{transform:translateY(-2px);box-shadow:0 14px 30px #087bc366}
+.contact-form-note{font-size:11px;color:#8fa7bd}
+@media(max-width:760px){.contact-page-layout{gap:16px;padding-bottom:65px}.contact-details-panel,.contact-form-panel{border-radius:18px}.contact-detail-row{padding-left:15px}.contact-form-panel button{width:100%}}
