@@ -570,3 +570,40 @@ h1{line-height:1.04;letter-spacing:-3.4px;text-wrap:balance}
 .blog-cta h2{font:700 clamp(28px,4vw,42px) var(--display);margin:8px 0}
 .blog-cta p:last-child{font-size:13px;color:var(--muted);margin:0}
 @media(max-width:640px){.blog-card{border-radius:18px}.blog-image{height:230px}.blog-category{left:16px;bottom:15px;padding:9px 17px}.blog-card-content{padding:22px 19px}.blog-article-details article{padding:21px}.blog-cta{align-items:flex-start;flex-direction:column}.blog-cta .btn{width:100%;text-align:center}}
+
+
+/* Spin & Win promotional wheel */
+.spin-page{padding:30px 0 75px;overflow:hidden}
+.spin-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);align-items:center;gap:clamp(30px,6vw,78px);min-height:680px}
+.spin-copy h1{font:700 clamp(38px,5.4vw,66px)/1.08 var(--display);letter-spacing:-2px;margin:18px 0}
+.spin-copy>.hero-lead{max-width:620px;font-size:clamp(16px,2vw,20px);line-height:1.8}
+.spin-benefits{display:grid;gap:20px;margin:38px 0 30px}
+.spin-benefit{display:flex;align-items:center;gap:16px}
+.spin-benefit-icon{display:grid;place-items:center;flex:0 0 66px;height:66px;border:1px solid #16bce766;border-radius:19px;background:linear-gradient(145deg,#0c3450,#071d34);color:#6cecff;font-size:27px;box-shadow:inset 0 0 22px #0bc8ff12}
+.spin-benefit strong{font-size:17px;color:var(--text)}
+.spin-benefit p{font-size:14px;color:var(--muted);margin:5px 0 0}
+.spin-note{font-size:13px;line-height:1.7;color:var(--muted);margin:25px 0}
+.spin-controls{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.spin-count{font-size:14px;color:#75e6f8;font-weight:700;margin:0}
+.spin-controls .btn:disabled{opacity:.55;cursor:not-allowed;transform:none}
+.spin-result{min-height:52px;margin:18px 0 0;padding:14px 17px;border:1px solid #21bde455;border-radius:13px;background:#0a2944;color:#cdefff;font-size:14px;line-height:1.7}
+.spin-result strong{color:#6cecff}
+.spin-wheel-area{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:45px 0 10px}
+.spin-wheel-frame{position:relative;width:min(100%,440px);aspect-ratio:1;border-radius:50%;padding:13px;background:linear-gradient(145deg,#6cecff,#0876b7 55%,#06375e);box-shadow:0 0 0 5px #0b4262,0 0 45px #11bce966,0 22px 55px #0008}
+.spin-wheel{position:relative;width:100%;height:100%;border-radius:50%;border:7px solid #07182b;background:conic-gradient(from -30deg,#d39a32 0deg 60deg,#087bbd 60deg 120deg,#08a5d0 120deg 180deg,#542a91 180deg 240deg,#087bbd 240deg 300deg,#542a91 300deg 360deg);transition:transform 4.2s cubic-bezier(.12,.72,.12,1);box-shadow:inset 0 0 0 3px #c9f4ff55}
+.spin-wheel:after{content:"";position:absolute;inset:0;border-radius:50%;background:repeating-conic-gradient(from -30deg,#ffffff88 0deg 1deg,transparent 1deg 60deg);pointer-events:none}
+.wheel-pointer{position:absolute;top:21px;left:50%;z-index:3;transform:translateX(-50%);width:0;height:0;border-left:21px solid transparent;border-right:21px solid transparent;border-top:44px solid #d8fbff;filter:drop-shadow(0 4px 5px #001a2b)}
+.wheel-center{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:25%;aspect-ratio:1;border:7px solid #61e9ff;border-radius:50%;background:linear-gradient(145deg,#123e62,#07192e);color:#fff;font:700 clamp(20px,4vw,32px) var(--display);box-shadow:0 0 25px #17c9ff88}
+.wheel-label{position:absolute;z-index:1;left:50%;top:50%;width:25%;margin-left:-12.5%;margin-top:-12.5%;text-align:center;color:#fff;font:700 clamp(15px,2.6vw,23px) var(--display);line-height:1.1;text-shadow:0 2px 4px #00182c}
+.wheel-label small{display:block;font-size:.62em;letter-spacing:2px;margin-top:5px}
+.label-7{transform:translateY(-112px)}
+.label-5a{transform:translate(97px,-56px)}
+.label-2{transform:translate(97px,56px)}
+.label-trya{transform:translateY(112px)}
+.label-5b{transform:translate(-97px,56px)}
+.label-tryb{transform:translate(-97px,-56px)}
+.wheel-caption{font-size:13px;color:var(--muted);margin:25px 0 0;letter-spacing:1px}
+.spin-terms{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:22px;border-top:1px solid var(--line)}
+.spin-terms p{max-width:700px;font-size:12px;line-height:1.7;color:var(--muted)}
+@media(max-width:850px){.spin-layout{grid-template-columns:1fr;gap:20px;min-height:0}.spin-copy{max-width:680px;margin:0 auto}.spin-wheel-area{padding-top:30px}.spin-wheel-frame{width:min(88vw,420px)}.wheel-pointer{top:7px}}
+@media(max-width:560px){.spin-page{padding-top:20px}.spin-copy h1{font-size:43px;letter-spacing:-1.5px}.spin-benefits{gap:16px;margin:28px 0 20px}.spin-benefit-icon{flex-basis:58px;height:58px}.spin-controls{align-items:flex-start;flex-direction:column}.spin-controls .btn{width:100%}.spin-wheel-frame{width:min(86vw,360px);padding:10px}.wheel-pointer{border-left-width:17px;border-right-width:17px;border-top-width:36px}.label-7{transform:translateY(-91px)}.label-5a{transform:translate(79px,-46px)}.label-2{transform:translate(79px,46px)}.label-trya{transform:translateY(91px)}.label-5b{transform:translate(-79px,46px)}.label-tryb{transform:translate(-79px,-46px)}.spin-terms{align-items:flex-start;flex-direction:column;gap:5px}}
